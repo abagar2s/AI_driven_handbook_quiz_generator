@@ -1,0 +1,43 @@
+# === Python (FastAPI backend) ===
+backend/__pycache__/
+backend/**/*.pyc
+backend/env/
+backend/.env
+backend/.venv/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# VSCode and Python tooling
+.vscode/
+*.log
+migrations/
+
+# === Node (React frontend) ===
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.DS_Store
+frontend/.parcel-cache
+frontend/.turbo/
+frontend/.next/
+frontend/yarn-error.log
+
+# === OS-specific ===
+.DS_Store
+Thumbs.db
+
+# === General ===
+.env
+*.bak
+*.tmp
+*.swp
+*.swo
+.idea/
+*.iml
+*.lock
+models/
+venv

@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pdfplumber
+pydantic
+python-multipart
+
+# Semantic chunking (embeddings + clustering)
+sentence-transformers
+scikit-learn
+nltk
+
+# Local LLaMA inference
+llama-cpp-python
+
+# Optional (better GPU/CPU perf for LLaMA if available)
+bitsandbytes
+accelerate

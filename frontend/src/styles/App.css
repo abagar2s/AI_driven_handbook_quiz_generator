@@ -1,0 +1,9 @@
+body {
+  font-family: sans-serif;
+  margin: 2rem;
+  background: #f9f9f9;
+}
+input, textarea, button {
+  display: block;
+  margin: 1rem 0;
+}
