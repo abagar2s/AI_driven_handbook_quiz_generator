@@ -63,7 +63,7 @@ def split_by_tokens(text: str, max_tokens: int) -> list[str]:
 @router.post("/upload")
 async def upload_files(
     files: List[UploadFile] = File(...),
-    prompt: str = Form("Create a training handbook and 5 quiz questions.")
+    prompt: str = Form("Refine and format the following training content into a clear handbook format with sections and bullet points")
 ):
     try:
         # 1️⃣ Extract, clean and chunk
@@ -79,10 +79,7 @@ async def upload_files(
         full_summary = "\n".join(all_summaries)
 
         # 3️⃣ Format final handbook
-        handbook_prompt = (
-            "Refine and format the following training content into a clear handbook format "
-            "with sections and bullet points. Do not include quiz questions."
-        )
+        handbook_prompt = prompt
         summary_chunks = split_by_tokens(full_summary, MAX_TOKEN_LENGTH)
         refined_parts = [
             run_llama_chat(handbook_prompt, chunk=c, max_tokens=1024)

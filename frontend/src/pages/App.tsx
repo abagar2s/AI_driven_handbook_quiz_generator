@@ -5,7 +5,7 @@ import Quiz from "../components/Quiz";
 
 function App() {
   const [files, setFiles] = useState<FileList | null>(null);
-  const [prompt, setPrompt] = useState("Create a training handbook and 5 quiz questions.");
+  const [prompt, setPrompt] = useState("Refine and format the following training content into a clear handbook format with sections and bullet points");
   const [handbook, setHandbook] = useState("");
   const [quiz, setQuiz] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
